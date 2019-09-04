@@ -1,26 +1,31 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/cloudest-co/laravel-email-log-eloquent.svg?style=flat-square)](https://packagist.org/packages/cloudest-co/:package_name)
-[![Build Status](https://img.shields.io/travis/cloudest-co/laravel-email-log-eloquent/master.svg?style=flat-square)](https://travis-ci.org/cloudest-co/:package_name)
-[![Quality Score](https://img.shields.io/scrutinizer/g/cloudest-co/laravel-email-log-eloquent.svg?style=flat-square)](https://scrutinizer-ci.com/g/cloudest-co/:package_name)
-[![Total Downloads](https://img.shields.io/packagist/dt/cloudest-co/laravel-email-log-eloquent.svg?style=flat-square)](https://packagist.org/packages/cloudest-co/:package_name)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/cloudest-co/laravel-eloquent-email-log.svg?style=flat-square)](https://packagist.org/packages/cloudest-co/:package_name)
+[![Build Status](https://img.shields.io/travis/cloudest-co/laravel-eloquent-email-log/master.svg?style=flat-square)](https://travis-ci.org/cloudest-co/:package_name)
+[![Quality Score](https://img.shields.io/scrutinizer/g/cloudest-co/laravel-eloquent-email-log.svg?style=flat-square)](https://scrutinizer-ci.com/g/cloudest-co/:package_name)
+[![Total Downloads](https://img.shields.io/packagist/dt/cloudest-co/laravel-eloquent-email-log.svg?style=flat-square)](https://packagist.org/packages/cloudest-co/:package_name)
 
 
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
+Logs all outbound emails to the database.
+
+Heavily inspired by https://github.com/shvetsgroup/laravel-email-database-log but with:
+
+- More modern database fields (use of JSON field)
+- An Eloquent model is included in the package
+- A foreign key to the the mailable is included
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require cloudest-co/laravel-email-log-eloquent
+composer require cloudest-co/laravel-eloquent-email-log
 ```
 
 ## Usage
 
 ``` php
-$skeleton = new Spatie\Skeleton();
-echo $skeleton->echoPhrase('Hello, Spatie!');
+
 ```
 
 ### Testing
