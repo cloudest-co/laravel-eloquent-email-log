@@ -27,8 +27,8 @@ class EmailLogger
             'subject' => $message->getSubject(),
             'body' => $message->getBody(),
             'headers' => json_encode(array_filter(explode("\r\n", $message->getHeaders()->toString()))),
-            'mailable_id' => $notifiable ? $notifiable->getKey() : null,
-            'mailable_type' => $notifiable ? get_class($notifiable) : null,
+            'notifiable_id' => $notifiable ? $notifiable->getKey() : null,
+            'notifiable_type' => $notifiable ? get_class($notifiable) : null,
         ]);
     }
 }
