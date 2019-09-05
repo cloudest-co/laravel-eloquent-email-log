@@ -37,8 +37,8 @@ class LaravelEloquentEmailLogTest extends \Orchestra\Testbench\TestCase
             'bcc' => 'bcc@example.com',
             'subject' => 'Test Subject',
             'body' => 'Test Body',
-            'mailable_id' => 999,
-            'mailable_type' => TestUser::class,
+            'notifiable_id' => 999,
+            'notifiable_type' => TestUser::class,
         ]);
     }
 }

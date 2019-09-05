@@ -23,8 +23,8 @@ class CreateEmailLogTable extends Migration
             $table->string('subject');
             $table->text('body');
             $table->json('headers')->nullable();
-            $table->unsignedBigInteger('mailable_id')->nullable();
-            $table->string('mailable_type')->nullable();
+            $table->unsignedBigInteger('notifiable_id')->nullable();
+            $table->string('notifiable_type')->nullable();
         });
     }
 
